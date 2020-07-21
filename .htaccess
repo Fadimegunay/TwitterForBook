@@ -1,0 +1,16 @@
+ErrorDocument 404 http://twitterforbook.com/404/
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^login$  login.php [L,QSA]
+RewriteRule ^logins$  function/services.php?do=login [L,QSA]
+
+RewriteRule ^sign-up$  signup.php [L,QSA]
+RewriteRule ^usersignup$  function/services.php?do=signup [L,QSA]
+
+RewriteRule ^index$  index.php [L,QSA]
