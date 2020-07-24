@@ -7,4 +7,14 @@ orientation to Twitter for Tweet.
 -- Login Page
 </img>
 <hr>
-
+<img src="https://github.com/Fadimegunay/TwitterForBook/blob/master/assets/sign-up.PNG" width="350" height="350" >
+-- Sign Up Page
+</img>
+<hr>
+<img src="https://github.com/Fadimegunay/TwitterForBook/blob/master/assets/index.PNG" width="350" height="350" >
+-- index Page
+</img>
+<hr>
+<img src="https://github.com/Fadimegunay/TwitterForBook/blob/master/assets/tweet-list.PNG" width="350" height="350" >
+-- Tweet List Page
+</img>
