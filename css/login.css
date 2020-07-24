@@ -51,20 +51,12 @@ button:hover {
   opacity: 0.8;
 }
 
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
 h2{
 	font-size: 25px;
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
     display: block;
-}
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
 }
 
 .container {

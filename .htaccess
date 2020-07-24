@@ -13,4 +13,11 @@ RewriteRule ^logins$  function/services.php?do=login [L,QSA]
 RewriteRule ^sign-up$  signup.php [L,QSA]
 RewriteRule ^usersignup$  function/services.php?do=signup [L,QSA]
 
+RewriteRule ^log_out$  function/services.php?do=logout [L,QSA]
+
 RewriteRule ^index$  index.php [L,QSA]
+
+RewriteRule ^url_get$  function/services.php?do=url [L,QSA]
+
+RewriteRule ^tweet_list$  tweet_list.php [L,QSA]
+RewriteRule ^tweet_list/p/([0-9]+)$  tweet_list.php?page=$1 [L,QSA]

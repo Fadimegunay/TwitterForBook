@@ -2,7 +2,8 @@
 	include('function/connect.php');
 	include('function/login.php');
 
-	LoginChecker();
+	login_Check();# checking the session
+	
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,7 +28,9 @@
                 if(isset($_SESSION['message']))
                 {
             ?>
-                <p class="alert alert-danger">  
+                <p class="alert " style="background-color: #9797bb;
+										  padding: 8px;
+										  color: white;">  
                     <?php echo $_SESSION['message'];
                     unset($_SESSION['message']); ?>
                 </p>
@@ -46,13 +49,12 @@
 	</div>
 
 	<script type="text/javascript">
-		
+		//this function ,for have not a 'login button' , getting to login datas with 'enter keyboard '.
 		$(document).ready(function () { 
             $('#cForm').change(function(){
 	            var username = $("#username").val(); 
 	            var password = $("#password").val(); 
 	            //console.log(username+"--"+password);
-	           // console.log(username.length+"--"+password.length);
 	            if(username.length >0 && password.length >0 ){
 	            	let datas = $("#cForm").serializeArray();
 	            	//console.log(datas);
@@ -62,10 +64,10 @@
 				        type: "POST"
 				    }).done(function(result) {
 	                    //console.log(result);
-	                    if(result == 1) {
+	                    if(result == 1) { // if login datas is true , go to index page
 	                        window.location = "/index";
-	                    }else{
-	                    	console.log(result);
+	                    }else{ // else go to login page again
+	                    	//console.log(result);
 	                    	window.location = "/login"
 	                    }
 	                });

@@ -1,5 +1,10 @@
 <?php
 	include('function/connect.php');
+
+	include('function/login.php');
+
+	login_Check(); # checking the session
+	
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,7 +24,9 @@
                 if(isset($_SESSION['message']))
                 {
             ?>
-                <p class="alert alert-danger">  
+                <p class="alert " style="background-color: #9797bb;
+										  padding: 8px;
+										  color: white;">  
                     <?php echo $_SESSION['message'];
                     unset($_SESSION['message']); ?>
                 </p>
