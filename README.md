@@ -11,10 +11,10 @@ orientation to Twitter for Tweet.
 -- Sign Up Page
 </img>
 <hr>
-<img src="https://github.com/Fadimegunay/TwitterForBook/blob/master/assets/index.PNG" width="400" height="350" >
+<img src="https://github.com/Fadimegunay/TwitterForBook/blob/master/assets/index.PNG" width="450" height="350" >
 -- index Page
 </img>
 <hr>
-<img src="https://github.com/Fadimegunay/TwitterForBook/blob/master/assets/tweet-list.PNG" width="400" height="350" >
+<img src="https://github.com/Fadimegunay/TwitterForBook/blob/master/assets/tweet-list.PNG" width="450" height="350" >
 -- Tweet List Page
 </img>
